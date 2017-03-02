@@ -1,0 +1,194 @@
+body {
+  background: #D4D8DD;
+  height: 100vh;
+  width: 100vw;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.clicker {
+  background: #FF8500;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+
+
+.perspective {
+
+  width: 400px;
+  height: 200px;
+  position: absolute;
+}
+
+.z1 {
+  z-index: 1;
+
+}
+.z2 {
+  z-index: 2;
+}
+.z3 {
+  z-index: 3;
+}
+
+.z4 {
+  z-index: 4;
+}
+
+.z5 {
+  z-index: 5;
+}
+
+.rest {
+  transition: all 1s cubic-bezier(0.55,-0.35, 0.08, 1);
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateY(0px);
+}
+
+.z1.spread {
+  transition: all 0.6s cubic-bezier(0.55,0, 0, 1.50) ;
+  transform: rotateX(-60deg) rotateY(0deg) rotateZ(-45deg) translateY(625px) translateX(-500px);
+
+}
+
+.z2.spread {
+  transition: all 0.6s cubic-bezier(0.55,0, 0, 1.50) 0.05s;
+  transform: rotateX(-60deg) rotateY(0deg) rotateZ(-45deg) translateY(500px) translateX(-375px);
+}
+
+.z3.spread {
+  transition: all 0.6s cubic-bezier(0.55,0, 0, 1.50) 0.15s;
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translateY(375px) translateX(-250px);
+  border-radius: 8px;
+}
+
+.z4.spread {
+  transition: all 0.6s cubic-bezier(0.55,0, 0, 1.50) 0.20s;
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translateY(250px) translateX(-125px);
+}
+
+.z5.spread {
+  transition: all 0.6s cubic-bezier(0.55,0, 0, 1.50) 0.25s;
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translateY(125px) translateX(0);
+}
+
+
+.move {
+  transform: translateY(50px);
+}
+
+.blue {
+  background: #2F80ED;
+}
+
+.pink {
+  background-color: #ED4A9B;
+}
+
+.red {
+  background-color: #ED4A47
+}
+
+.yellow {
+  background-color: #FAE100;
+}
+
+.green {
+  background-color: #00CC66;
+}
+
+.grey {
+  background-color: #B9B9B9;
+}
+
+.zeroz {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding-top: 72px;
+  font-size: 48px;
+}
+
+.first {
+  box-shadow: inset 0px 0px 24px rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+}
+
+.second {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+  background-blend-mode: hard-light, normal;
+  border-radius: 16px;
+}
+
+.third {
+  border-color: #A20000;
+  border-width: 4  px;
+  border-style: solid;
+  border-radius: 16px;
+}
+
+.fourth {
+  background: #DA0000;
+  border-radius: 16px;
+}
+
+.figma {
+  /* Rectangle */
+  /* Rectangle */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%),
+  linear-gradient(0deg, #DA0000, #DA0000);
+  background-blend-mode: hard-light, normal;
+  opacity: 1.00;
+  box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+
+}
+
+.quotations {
+  position: relative;
+  top: 0;
+  left:500px;
+  padding-top: 106px;
+}
+
+.line {
+  display: inline-block;
+  border-top-color: white;
+  border-top-style: dashed;
+  border-top-width: 1px;
+  height: 1px;
+  width: 120px;
+  margin: 0 0 84px;
+}
+
+.quote_text {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 14px;
+  color: white;
+  position: relative;
+  top: -80px;
+  margin-left: 24px;
+}
+
+.quote {
+
+}
+
+.hide {
+  display: none
+}
+
+.show .line {
+
+}
