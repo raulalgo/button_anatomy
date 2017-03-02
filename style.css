@@ -167,8 +167,8 @@ div {
   border-top-style: dashed;
   border-top-width: 1px;
   height: 1px;
-  width: 120px;
   margin: 0 0 84px;
+  width: 0px;
 }
 
 .quote_text {
@@ -189,6 +189,7 @@ div {
   display: none
 }
 
-.show .line {
-
+.line.show {
+  transition: all 0.6s cubic-bezier(0, 0, 1, 0) 2s;
+  width: 240px;
 }

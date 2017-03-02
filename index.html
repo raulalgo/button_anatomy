@@ -8,6 +8,12 @@
       $(document).ready(function(){
         $("body").click(function(){
           $(".perspective").toggleClass("spread rest")
+          $(".line").each(function (index){
+            $(this).delay(index*500).queue(function(){
+              $(this).toggleClass("show");
+            });
+          });
+
         })
       });
     </script>
@@ -25,23 +31,23 @@
       <div class="quotations">
         <div class="quote ">
           <div class="line"></div>
-          <div class="quote_text">2008 - Web 2.0 big bang</div>
+          <div class="quote_text hide">2008 - Web 2.0 big bang</div>
         </div>
         <div class="quote ">
           <div class="line"></div>
-          <div class="quote_text">2008 - Web 2.0 big bang</div>
+          <div class="quote_text hide">2008 - Web 2.0 big bang</div>
         </div>
         <div class="quote ">
           <div class="line"></div>
-          <div class="quote_text">2008 - Web 2.0 big bang</div>
+          <div class="quote_text hide">2008 - Web 2.0 big bang</div>
         </div>
         <div class="quote ">
           <div class="line"></div>
-          <div class="quote_text">2008 - Web 2.0 big bang</div>
+          <div class="quote_text hide">2008 - Web 2.0 big bang</div>
         </div>
         <div class="quote ">
           <div class="line"></div>
-          <div class="quote_text">2008 - Web 2.0 big bang</div>
+          <div class="quote_text hide">2008 - Web 2.0 big bang</div>
         </div>
 
       </div>
