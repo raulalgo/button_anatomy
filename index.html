@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+    </style>
     <script type="text/javascript" src="jquery-3.1.1.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
@@ -11,6 +14,12 @@
           $(".line").each(function (index){
             $(this).delay(index*500).queue(function(){
               $(this).toggleClass("show");
+            });
+          });
+          $(".quote_text").each(function (index){
+            $(this).delay(2100+(index*500)).queue(function(){
+              $(this).addClass("type");
+              $(this).removeClass("hide");
             });
           });
 
@@ -31,23 +40,23 @@
       <div class="quotations">
         <div class="quote ">
           <div class="line"></div>
-          <div class="quote_text hide">2008 - Web 2.0 big bang</div>
+          <div class="quote_text hide">2008 - Web 2.0</div>
         </div>
         <div class="quote ">
           <div class="line"></div>
-          <div class="quote_text hide">2008 - Web 2.0 big bang</div>
+          <div class="quote_text hide">2010 - Web 2.0 big bang</div>
         </div>
         <div class="quote ">
           <div class="line"></div>
-          <div class="quote_text hide">2008 - Web 2.0 big bang</div>
+          <div class="quote_text hide">2013 - Web 2.0 big bang</div>
         </div>
         <div class="quote ">
           <div class="line"></div>
-          <div class="quote_text hide">2008 - Web 2.0 big bang</div>
+          <div class="quote_text hide">2014 - Web 2.0 big bang</div>
         </div>
         <div class="quote ">
           <div class="line"></div>
-          <div class="quote_text hide">2008 - Web 2.0 big bang</div>
+          <div class="quote_text hide">2016 - Web 2.0 big bang</div>
         </div>
 
       </div>
